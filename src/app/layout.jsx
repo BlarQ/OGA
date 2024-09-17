@@ -16,6 +16,7 @@ const geistMono = localFont({
 export const metadata = {
   title: "OGA App",
   description: "Online Gateway to Adeventures",
+
 };
 
 export default function RootLayout({ children }) {
