@@ -36,41 +36,46 @@ const Header = () => {
   }
 
   return (
-    <div className='relative bg-secondary'>
-      <div className='flex justify-between items-center px-8 lg:px-16 w-full h-24 relative z-50'>
-        <div>
-          <Image src='/o3logo.png' alt='logo' width={70} height={70} />
-        </div>
-        <div className='lg:hidden md:hidden'>
-          <button onClick={toggleMenu} className="z-50">
-            {isOpen ? (
-              <IoCloseSharp className='h-6 w-6 text-tertiary text-lg' />
-            ) : (
-              <GiHamburgerMenu className='h-6 w-6 text-tertiary text-lg' />
-            )}
-          </button>
-        </div>
+    <>
+      <header className='fixed top-0 left-0 right-0 bg-secondary z-50'>
+        <div className='flex justify-between items-center px-8 lg:px-16 w-full h-24'>
+          <div>
+            <Image src='/o3logo.png' alt='logo' width={70} height={70} />
+          </div>
+          <div className='lg:hidden md:hidden'>
+            <button onClick={toggleMenu} className="z-50">
+              {isOpen ? (
+                <IoCloseSharp className='h-6 w-6 text-tertiary text-lg' />
+              ) : (
+                <GiHamburgerMenu className='h-6 w-6 text-tertiary text-lg' />
+              )}
+            </button>
+          </div>
 
-        <div className='hidden lg:flex space-x-8 mx-auto text-tertiary font-semibold'>
-          <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300'>
-            Find Events
-          </Link>
-          <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300'>
-            About
-          </Link>
-          <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300'>
-            FAQs
-          </Link>
-          <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300'>
-            Retrieve Ticket
-          </Link>
-        </div>
+          <div className='hidden lg:flex space-x-8 mx-auto text-tertiary font-semibold'>
+            <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300'>
+              Find Events
+            </Link>
+            <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300'>
+              About
+            </Link>
+            <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300'>
+              FAQs
+            </Link>
+            <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300'>
+              Retrieve Ticket
+            </Link>
+          </div>
 
-        <div className='lg:flex md:flex hidden space-x-4'>
-          <Link href='#'><button className='bg-primary rounded-full p-2 w-36 text-white font-semibold'>Get Started</button></Link>
-          <Link href='#'><button className='bg-transparent rounded-full p-2 w-36 text-primary border-primary border-2 font-semibold'>Login</button></Link>
+          <div className='lg:flex md:flex hidden space-x-4'>
+            <Link href='#'><button className='bg-primary rounded-full p-2 w-36 text-white font-semibold'>Get Started</button></Link>
+            <Link href='#'><button className='bg-transparent rounded-full p-2 w-36 text-primary border-primary border-2 font-semibold'>Login</button></Link>
+          </div>
         </div>
-      </div>
+      </header>
+
+      {/* Spacer to prevent content from hiding behind fixed header */}
+      <div className="h-24"></div>
 
       {/* mobile menu */}
       <AnimatePresence>
@@ -83,16 +88,16 @@ const Header = () => {
             variants={menuVariants}
           >
             <motion.div variants={itemVariants}>
-              <Link href='#' className='text-lg hover:text-primary font-semibold' onClick={closeMenu}>Find Events</Link>
+              <Link href='#' className='text-2xl hover:text-primary font-semibold' onClick={closeMenu}>Find Events</Link>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <Link href='#' className='text-lg hover:text-primary font-semibold' onClick={closeMenu}>About</Link>
+              <Link href='#' className='text-2xl hover:text-primary font-semibold' onClick={closeMenu}>About</Link>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <Link href='#' className='text-lg hover:text-primary font-semibold' onClick={closeMenu}>FAQs</Link>
+              <Link href='#' className='text-2xl hover:text-primary font-semibold' onClick={closeMenu}>FAQs</Link>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <Link href='#' className='text-lg hover:text-primary font-semibold' onClick={closeMenu}>Retrieve Ticket</Link>
+              <Link href='#' className='text-2xl hover:text-primary font-semibold' onClick={closeMenu}>Retrieve Ticket</Link>
             </motion.div>
             <motion.div variants={itemVariants}>
               <Link href='#' onClick={closeMenu}>
@@ -107,7 +112,7 @@ const Header = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </>
   )
 }
 
