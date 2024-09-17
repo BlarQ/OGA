@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "OGA Ticketing App",
+  title: "O3 Ticketing App",
   description: "Online Gateway to Adeventures",
 
 };
@@ -28,9 +28,6 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
 
-        <div className="fixed bottom-0">
-          <Footer />
-        </div>
       </body>
     </html>
   );
