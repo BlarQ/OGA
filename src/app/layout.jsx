@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "OGA Ticketing App",
+  title: "O3 Ticketing App",
   description: "Online Gateway to Adeventures",
 
 };
