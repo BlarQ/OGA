@@ -28,9 +28,6 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
 
-        <div className="fixed bottom-0">
-          <Footer />
-        </div>
       </body>
     </html>
   );
