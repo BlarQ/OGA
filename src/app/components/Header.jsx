@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <>
       <header className='fixed top-0 left-0 right-0 bg-secondary z-50'>
-        <div className='flex justify-between items-center px-8 lg:px-16 w-full h-24'>
+        <div className='flex justify-between items-center px-4 lg:px-16 w-full h-24'>
           <div>
             <Image src='/o3logo.png' alt='logo' width={70} height={70} />
           </div>
