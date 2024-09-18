@@ -38,10 +38,10 @@ const Header = () => {
   return (
     <>
       <header className='fixed top-0 left-0 right-0 bg-secondary z-50'>
-        <div className='flex justify-between items-center px-8 lg:px-16 w-full h-24'>
-          <div>
+        <div className='flex justify-between items-center px-4 lg:px-16 w-full h-24'>
+          <Link href="#">
             <Image src='/o3logo.png' alt='logo' width={70} height={70} />
-          </div>
+          </Link>
           <div className='lg:hidden md:hidden'>
             <button onClick={toggleMenu} className="z-50">
               {isOpen ? (
@@ -52,20 +52,30 @@ const Header = () => {
             </button>
           </div>
 
-          <div className='hidden lg:flex space-x-8 mx-auto text-tertiary font-semibold'>
-            <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300'>
-              Find Events
-            </Link>
-            <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300'>
-              About
-            </Link>
-            <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300'>
-              FAQs
-            </Link>
-            <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300'>
-              Retrieve Ticket
-            </Link>
-          </div>
+          <nav className='hidden lg:flex space-x-8 mx-auto text-tertiary font-semibold'>
+            <ul className='flex justify-between items-center gap-8'>
+              <li className='group duration-300'>
+                <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300 active:border-b-primary'>
+                  Find Events
+                </Link>
+              </li>
+              <li>
+                <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300 active:border-b-primary'>
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href='#' className='hover:border-b-2 w-4 hover:border-b-primary hover:cursor-pointer transition-all duration-300 active:border-b-primary'>
+                  FAQs
+                </Link>
+              </li>
+              <li>
+                <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300 active:border-b-primary'>
+                  Retrieve Ticket
+                </Link>
+              </li>
+            </ul>
+          </nav>
 
           <div className='lg:flex md:flex hidden space-x-4'>
             <Link href='#'><button className='bg-primary rounded-full p-2 w-36 text-white font-semibold'>Get Started</button></Link>
