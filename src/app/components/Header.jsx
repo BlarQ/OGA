@@ -65,7 +65,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href='#' className='hover:border-b-2 w-4 hover:border-b-primary hover:cursor-pointer transition-all duration-300 active:border-b-primary'>
+                <Link href='/faq' className='hover:border-b-2 w-4 hover:border-b-primary hover:cursor-pointer transition-all duration-300 active:border-b-primary'>
                   FAQs
                 </Link>
               </li>
