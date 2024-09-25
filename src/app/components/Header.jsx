@@ -55,22 +55,22 @@ const Header = () => {
           <nav className='hidden lg:flex space-x-8 mx-auto text-tertiary font-semibold'>
             <ul className='flex justify-between items-center gap-8'>
               <li className='group duration-300'>
-                <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300 active:border-b-primary'>
+                <Link href='/' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300 active:border-b-primary'>
                   Find Events
                 </Link>
               </li>
               <li>
-                <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300 active:border-b-primary'>
+                <Link href='/about' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300 active:border-b-primary'>
                   About
                 </Link>
               </li>
               <li>
-                <Link href='#' className='hover:border-b-2 w-4 hover:border-b-primary hover:cursor-pointer transition-all duration-300 active:border-b-primary'>
+                <Link href='/faq' className='hover:border-b-2 w-4 hover:border-b-primary hover:cursor-pointer transition-all duration-300 active:border-b-primary'>
                   FAQs
                 </Link>
               </li>
               <li>
-                <Link href='#' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300 active:border-b-primary'>
+                <Link href='/' className='hover:border-b-2 hover:border-b-primary hover:cursor-pointer transition-all duration-300 active:border-b-primary'>
                   Retrieve Ticket
                 </Link>
               </li>
@@ -98,24 +98,24 @@ const Header = () => {
             variants={menuVariants}
           >
             <motion.div variants={itemVariants}>
-              <Link href='#' className='text-2xl hover:text-primary font-semibold' onClick={closeMenu}>Find Events</Link>
+              <Link href='/' className='text-2xl hover:text-primary font-semibold' onClick={closeMenu}>Find Events</Link>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <Link href='#' className='text-2xl hover:text-primary font-semibold' onClick={closeMenu}>About</Link>
+              <Link href='/about' className='text-2xl hover:text-primary font-semibold' onClick={closeMenu}>About</Link>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <Link href='#' className='text-2xl hover:text-primary font-semibold' onClick={closeMenu}>FAQs</Link>
+              <Link href='/faq' className='text-2xl hover:text-primary font-semibold' onClick={closeMenu}>FAQs</Link>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <Link href='#' className='text-2xl hover:text-primary font-semibold' onClick={closeMenu}>Retrieve Ticket</Link>
+              <Link href='/' className='text-2xl hover:text-primary font-semibold' onClick={closeMenu}>Retrieve Ticket</Link>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <Link href='#' onClick={closeMenu}>
+              <Link href='/' onClick={closeMenu}>
                 <button className='bg-primary text-white py-3 px-8 rounded-full text-lg'>Get Started</button>
               </Link>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <Link href='#' onClick={closeMenu}>
+              <Link href='/' onClick={closeMenu}>
                 <button className='bg-transparent text-primary border-2 border-primary py-3 px-8 rounded-full text-lg'>Login</button>
               </Link>
             </motion.div>
