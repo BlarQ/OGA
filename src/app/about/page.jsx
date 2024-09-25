@@ -21,14 +21,14 @@ const page = () => {
                 <h1 className='sm:text-5xl
                 text-4xl 
                 font-semibold
-                '>Your Gateway to Unforgettable Experiences</h1>
+                '>Connecting You to Unforgettable Moments</h1>
                 <p className='text-gray-500
                 leading-7
                 md:leading-8
                 text-left 
                 md:text-lg
                 w-[90%]
-                md:w-full'>Our mission is to bring people closer to their favourite events. we dedicate ourselves to providing a seamless platform where you can secure your tickets effortlessly. Discover more about who we are and what drives us to create memorable experiences for you.</p>
+                md:w-full'>Our mission is to connect you with the events you love. We are dedicated to providing a seamless platform where securing tickets is effortless and convenient. Learn more about who we are and what drives us to create memorable moments for you, bringing you closer to unforgettable experiences.</p>
             </div>
             <div className='bg-[url(/aboutbg2.jpg)]
             bg-no-repeat
