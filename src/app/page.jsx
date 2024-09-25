@@ -6,7 +6,11 @@ export default function Home() {
     <div>
       
       <div className="min-h-[100vh]">
-        <h1>wrfbhf</h1>
+        <h1>Stashed Chaanges</h1>
+        <h1>Stashed Chaanges</h1>
+        <h1>Stashed Chaanges</h1>
+        <h1>Stashed Chaanges</h1>
+        <h1>Stashed Chaanges</h1>
       </div>
 
       <Footer />

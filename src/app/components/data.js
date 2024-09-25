@@ -37,3 +37,18 @@ export const faq = [
       answer: "Absolutely! You can sign up for our newsletter on our homepage. You'll receive updates about new events, presale opportunities, and special promotions. You can also follow us on social media for the latest news."
     }
   ];
+
+  export const about = [
+    {
+      title: "Ticket Sold",
+      figure: "500,000"
+    },
+    {
+      title: "Happy Customers",
+      figure: "5000"
+    },
+    {
+      title: "Sold-Out Events",
+      figure: "1000"
+    }
+  ]

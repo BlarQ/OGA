@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import Footer from '../components/Footer';
-import { faq } from '../components/faq';
+import { faq } from '../components/data';
 import Link from 'next/link';
 
 const QuestionsAnswer = ({ question, answer }) => {
